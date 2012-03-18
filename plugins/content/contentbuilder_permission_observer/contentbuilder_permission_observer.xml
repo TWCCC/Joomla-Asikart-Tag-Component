@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="content" version="1.5.0" method="upgrade">
+	<name>ContentBuilder Permission Observer</name>
+	<creationDate>July 2011</creationDate>
+	<author>Markus Bopp - Crosstec Solutions</author>
+	<copyright>This Joomla! component is released under the GNU/GPL license</copyright>
+	<authorEmail>markus.bopp@crosstec.de</authorEmail>
+	<authorUrl>www.crosstec.de</authorUrl>
+	<version>1.0</version>
+	<administration></administration>
+	<description>
+	<![CDATA[
+        Observes content items' permissions
+        ]]>
+    </description>
+    <files>
+        <filename plugin="contentbuilder_permission_observer">contentbuilder_permission_observer.php</filename>
+    </files>
+    <config>
+    </config>
+    <!--  J! 1.5 compatibility -->
+    <params>
+    </params>
+</install>

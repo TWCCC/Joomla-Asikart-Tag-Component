@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+ <name>Contentbuilder</name>
+ <creationDate>2012-03-10</creationDate>
+ <author>Markus Bopp</author>
+ <authorEmail>markus.bopp@crosstec.de</authorEmail>
+ <authorUrl>http://www.crosstec.de</authorUrl>
+ <copyright>Copyright since 2011 by Markus Bopp - Crosstec GmbH &amp; Co. KG</copyright>
+ <license>GNU/GPL v2.0</license>
+ <version>0.9 (build 233)</version>
+ <description>A content construction extension for Joomla!</description>
+
+ <scriptfile>script.php</scriptfile>
+
+ <uninstall>
+  <sql>
+    <file charset="utf8" driver="mysql">uninstall.sql</file>
+  </sql>
+ </uninstall>
+ 
+ <installfile>install.php</installfile>
+ <uninstallfile>uninstall.php</uninstallfile>
+
+ <files folder="site">
+    <filename>index.html</filename>
+    <filename>contentbuilder.php</filename>
+    <filename>controller.php</filename>
+    <filename>router.php</filename>
+    <folder>views</folder>
+    <folder>tables</folder>
+    <folder>models</folder>
+    <folder>controllers</folder>
+    <folder>images</folder>
+    <folder>elements</folder>
+    <folder>assets</folder>
+ </files>
+
+ <languages folder="admin">
+    <language tag="en-GB">languages/en-GB/site/en-GB.com_contentbuilder.ini</language>
+    <language tag="de-DE">languages/de-DE/site/de-DE.com_contentbuilder.ini</language>
+ </languages>
+
+ <administration>
+  <menu img="components/com_contentbuilder/views/logo_icon_cb.png">ContentBuilder</menu>
+  <submenu>
+      <menu controller="storages" img="components/com_contentbuilder/views/logo_icon_cb.png">COM_CONTENTBUILDER_STORAGES</menu>
+      <menu controller="forms" img="components/com_contentbuilder/views/logo_icon_cb.png">COM_CONTENTBUILDER_LIST</menu>
+      <menu link="option=com_contentbuilder&amp;view=contentbuilder&amp;market=true">Try BreezingForms!</menu>
+      <menu view="contentbuilder">COM_CONTENTBUILDER_ABOUT</menu>
+  </submenu>
+
+  <files folder="admin">
+    <filename>controller.php</filename>
+    <filename>contentbuilder.php</filename>
+    <filename>access.xml</filename>
+    <filename>config.xml</filename>
+    <filename>index.html</filename>
+    <filename>uninstall.sql</filename>
+    <filename>uninstall.php</filename>
+    <filename>install.php</filename>
+    <folder>controllers</folder>
+    <folder>models</folder>
+    <folder>tables</folder>
+    <folder>views</folder>
+    <folder>classes</folder>
+    <folder>languages</folder>
+    <folder>assets</folder>
+    <folder>plugins</folder>
+  </files>
+
+ <languages folder="admin">
+    <language tag="en-GB">languages/en-GB/admin/en-GB.com_contentbuilder.ini</language>
+    <language tag="en-GB">languages/en-GB/admin/en-GB.com_contentbuilder.menu.ini</language>
+    <language tag="en-GB">languages/en-GB/admin/en-GB.com_contentbuilder.sys.ini</language>
+    <language tag="de-DE">languages/de-DE/admin/de-DE.com_contentbuilder.ini</language>
+    <language tag="de-DE">languages/de-DE/admin/de-DE.com_contentbuilder.menu.ini</language>
+    <language tag="de-DE">languages/de-DE/admin/de-DE.com_contentbuilder.sys.ini</language>
+ </languages>
+
+ </administration>
+</install>

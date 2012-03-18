@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- $Id: zh-TW.install.xml 2011-07-26 17:33:12M YeYo $ -->
+<extension type="package" version="2.5">
+    <name>繁體中文</name>
+	<tag>zh-TW</tag>
+    <packagename>zh-TW</packagename>
+    <version>2.5.0</version>
+	<creationDate>2012-01-30</creationDate>
+	<author>Traditional Chinese translation team : Joomla! Taiwan</author>
+	<authorEmail>joomlaorg@joomla.org.tw</authorEmail>
+	<authorUrl>www.joomla.org.tw</authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters &amp; Joomla! Taiwan All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>zh-TW site language</description>
+ <files>
+        <file type="language" client="site" id="zh-TW">site_zh-TW.zip</file>
+        <file type="language" client="admin" id="zh-TW">admin_zh-TW.zip</file>
+  </files>
+</extension>

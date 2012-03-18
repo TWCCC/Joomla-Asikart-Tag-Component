@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="system" version="1.5.0" method="upgrade">
+	<name>ContentBuilder System</name>
+	<creationDate>July 2011</creationDate>
+	<author>Markus Bopp - Crosstec Solutions</author>
+	<copyright>This Joomla! component is released under the GNU/GPL license</copyright>
+	<authorEmail>markus.bopp@crosstec.de</authorEmail>
+	<authorUrl>www.crosstec.de</authorUrl>
+	<version>1.0</version>
+	<administration></administration>
+	<description>
+	<![CDATA[
+        Manages important system related aspects
+        ]]>
+    </description>
+    <files>
+        <filename plugin="contentbuilder_system">contentbuilder_system.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="limit_per_turn" type="text" default="50" label="Synch Limit Per Turn"/>
+                <field name="disable_new_articles" type="radio" default="1" label="Disable Joomla built-in article submission" description="">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="nocache" type="radio" default="1" label="Disable Joomla Cache for com_content" description="WARNING: If you set this to no, many plugins like ImageScale won't work anymore because Joomla! does not call plugins with cached content.">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <!--  J! 1.5 compatibility -->
+    <params>
+        <param name="limit_per_turn" type="text" default="50" label="Synch Limit Per Turn"/>
+        <param name="disable_new_articles" type="radio" default="1" label="Disable Joomla built-in article submission" description="">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="nocache" type="radio" default="1" label="Disable Joomla Cache for com_content" description="WARNING: If you set this to no, many plugins like ImageScale won't work anymore because Joomla! does not call plugins with cached content.">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+    </params>
+</install>
